@@ -1,0 +1,470 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Archie Lumosad — IT student, software testing and UI/UX portfolio.">
+<title>Archie Lumosad — Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+/* MULTI IMAGE PROJECT VIEWER */
+
+#lightbox.gallery-active {
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    align-items: flex-start !important;
+}
+
+#lightbox .lightbox-content {
+    width: 100%;
+    max-width: 1000px;
+    margin: 55px auto 20px;
+}
+
+#lightbox .multi-gallery {
+    width: 100%;
+    max-height: none !important;
+    overflow: visible !important;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 20px 30px;
+    scroll-behavior: smooth;
+}
+
+#lightbox .multi-gallery img {
+    display: block;
+    width: 100%;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+#lightbox.gallery-active > img {
+    display: none !important;
+}
+
+#lightbox .multi-gallery {
+    display: none;
+}
+
+#lightbox.gallery-active .multi-gallery {
+    display: flex !important;
+}
+
+#lightbox.gallery-active .lightbox-caption {
+    position: sticky;
+    bottom: 0;
+    background: #111;
+    padding: 15px;
+    z-index: 5;
+}
+
+#lightbox .lightbox-close {
+    position: fixed !important;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+@media(max-width:768px) {
+    #lightbox .multi-gallery {
+        padding: 10px;
+        gap: 12px;
+    }
+
+    #lightbox .lightbox-content {
+        margin-top: 60px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="loader">
+    <span>AL<span class="dot">.</span></span>
+</div>
+
+<header class="nav">
+    <a class="logo" href="#top">AL<span>.</span></a>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="nav-contact" href="#contact">
+        Let's connect <span>↗</span>
+    </a>
+
+    <button class="menu" aria-label="Menu">☰</button>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+
+<section class="hero">
+    <div class="hero-inner">
+
+        <div class="hero-copy reveal">
+            <p class="eyebrow">
+                <i></i> AVAILABLE FOR INTERNSHIP / OJT
+            </p>
+
+            <h1>
+                Building things.<br>
+                <em>Testing ideas.</em>
+            </h1>
+
+            <p class="intro">
+                Hi, I'm <b>Archie Lumosad</b> — an IT student interested in software quality, web development, and thoughtful digital experiences.
+            </p>
+
+            <div class="actions">
+                <a class="btn primary" href="#work">
+                    Explore my work <span>↗</span>
+                </a>
+
+                <a class="btn secondary" href="mailto:archielumosad2@gmail.com">
+                    Contact me <span>↗</span>
+                </a>
+            </div>
+
+            <div class="meta">
+                ⌖ Imus, Cavite, Philippines <span>·</span> IT Student
+            </div>
+        </div>
+
+        <div class="portrait reveal">
+            <img src="assets/archie.jpg" alt="Archie outdoors beside off-road vehicles">
+
+            <div class="portrait-caption">
+                <span>ARCHIE LUMOSAD</span>
+                <span>PORTFOLIO / 2026</span>
+            </div>
+
+            <div class="portrait-number">01 — 04</div>
+        </div>
+
+    </div>
+
+    <div class="scroll-hint">
+        <span>SCROLL TO DISCOVER</span>
+
+        <div class="scroll-track">
+            <i></i>
+        </div>
+
+        <span>01 / INTRO</span>
+    </div>
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="section about">
+    <div class="wrap about-grid reveal">
+
+        <div>
+            <p class="eyebrow">01 / ABOUT</p>
+
+            <h2>
+                Curious by nature.<br>
+                <em>Driven to improve.</em>
+            </h2>
+        </div>
+
+        <div class="about-copy">
+            <p>
+                I'm a Bachelor of Science in Information Technology student who enjoys building practical systems, exploring UI/UX design, and learning how to make software work better for people.
+            </p>
+
+            <p>
+                I'm looking for an internship where I can learn from a team, sharpen my technical skills, and contribute with curiosity and attention to detail.
+            </p>
+
+            <div class="facts">
+                <div>
+                    <small>BASED IN</small>
+                    <b>Imus, Cavite</b>
+                </div>
+
+                <div>
+                    <small>FOCUS</small>
+                    <b>Software Testing · IT</b>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROJECTS -->
+
+<section id="work" class="section work">
+    <div class="wrap">
+
+        <div class="section-head reveal">
+            <div>
+                <p class="eyebrow">02 / SELECTED WORK</p>
+                <h2>Projects & explorations.</h2>
+            </div>
+
+            <p>Things I've designed, built, and explored.</p>
+        </div>
+
+        <div class="projects" id="projectGrid">
+
+            <!-- PROJECT 1 -->
+
+            <article class="project featured reveal"
+                data-title="KOKOL Coffee — Inventory & Sales System"
+                data-description="An automated inventory and sales system created for KOKOL Coffee to improve stock monitoring, sales recording, and daily operations."
+                data-image="assets/kokol-sales.png">
+
+                <div class="project-img">
+                    <img src="assets/kokol-sales.png" alt="KOKOL sales dashboard">
+                    <span class="view">VIEW PROJECT ↗</span>
+                </div>
+
+                <div class="project-text">
+                    <div>
+                        <small>CAPSTONE · WEB APPLICATION</small>
+                        <h3>KOKOL Coffee</h3>
+                    </div>
+
+                    <span class="arrow">↗</span>
+
+                    <p>Inventory and sales management for a local coffee shop.</p>
+
+                    <div class="chips">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>HTML / CSS</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PROJECT 2 -->
+
+            <article class="project reveal"
+                data-title="KOKOL — UI/UX Concepts"
+                data-description="A set of interface explorations for the KOKOL Coffee customer experience, including the home, menu, and about pages."
+                data-image="assets/kokol-homepage-design.png">
+
+                <div class="project-img">
+                    <img src="assets/kokol-homepage-design.png" alt="KOKOL homepage design">
+                    <span class="view">VIEW PROJECT ↗</span>
+                </div>
+
+                <div class="project-text">
+                    <div>
+                        <small>UI / UX · FIGMA</small>
+                        <h3>Interface explorations</h3>
+                    </div>
+
+                    <span class="arrow">↗</span>
+
+                    <p>Designing a clear, welcoming coffee shop experience.</p>
+
+                    <div class="chips">
+                        <span>Figma</span>
+                        <span>UI Design</span>
+                        <span>Prototyping</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PROJECT 3 -->
+
+            <article class="project reveal"
+                data-title="Customer Management"
+                data-description="A customer management module for the KOKOL system, helping staff organize customer information and interactions."
+                data-image="assets/kokol-customer-management.png">
+
+                <div class="project-img">
+                    <img src="assets/kokol-customer-management.png" alt="KOKOL customer management module">
+                    <span class="view">VIEW PROJECT ↗</span>
+                </div>
+
+                <div class="project-text">
+                    <div>
+                        <small>SYSTEM MODULE</small>
+                        <h3>Customer management</h3>
+                    </div>
+
+                    <span class="arrow">↗</span>
+
+                    <p>Customer records and management interface.</p>
+
+                    <div class="chips">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>UI</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PROJECT 4 -->
+
+            <article class="project reveal"
+                data-title="Messages & Support"
+                data-description="A messaging interface concept for organizing customer messages and support conversations."
+                data-image="assets/kokol-messages.png">
+
+                <div class="project-img">
+                    <img src="assets/kokol-messages.png" alt="KOKOL messages module">
+                    <span class="view">VIEW PROJECT ↗</span>
+                </div>
+
+                <div class="project-text">
+                    <div>
+                        <small>SYSTEM MODULE</small>
+                        <h3>Messages & support</h3>
+                    </div>
+
+                    <span class="arrow">↗</span>
+
+                    <p>Customer communication and message handling.</p>
+
+                    <div class="chips">
+                        <span>Web</span>
+                        <span>Dashboard</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="upload-row reveal">
+            <div>
+                <strong>More projects coming.</strong>
+                <p>New projects will appear here as they are added to the portfolio database.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills" class="section skills">
+    <div class="wrap skills-grid reveal">
+
+        <div>
+            <p class="eyebrow">03 / TOOLKIT</p>
+
+            <h2>
+                Tools &<br>
+                capabilities.
+            </h2>
+
+            <p class="muted">
+                Things I've worked with and continue to learn.
+            </p>
+        </div>
+
+        <div class="skill-list">
+
+            <div>
+                <small>01</small>
+                <b>HTML & CSS</b>
+                <span>Web fundamentals</span>
+            </div>
+
+            <div>
+                <small>02</small>
+                <b>PHP & MySQL</b>
+                <span>Backend · Database</span>
+            </div>
+
+            <div>
+                <small>03</small>
+                <b>Manual Testing</b>
+                <span>Test cases · Exploratory</span>
+            </div>
+
+            <div>
+                <small>04</small>
+                <b>Bug Reporting</b>
+                <span>Reproduction · Documentation</span>
+            </div>
+
+            <div>
+                <small>05</small>
+                <b>Figma</b>
+                <span>UI · UX design</span>
+            </div>
+
+            <div>
+                <small>06</small>
+                <b>Git & GitHub</b>
+                <span>Version control</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+    <div class="wrap contact-inner reveal">
+
+        <p class="eyebrow">04 / GET IN TOUCH</p>
+
+        <h2>
+            Let's make the<br>
+            <em>next thing better.</em>
+        </h2>
+
+        <p>
+            Open to internship opportunities, collaboration, and learning experiences. Let's connect.
+        </p>
+
+        <a class="btn primary email" href="mailto:archielumosad2@gmail.com">
+            archielumosad2@gmail.com <span>↗</span>
+        </a>
+
+        <footer>
+            <span>ARCHIE LUMOSAD © 2026</span>
+            <a href="#top">BACK TO TOP ↑</a>
+        </footer>
+
+    </div>
+</section>
+
+</main>
+
+<!-- LIGHTBOX / PROJECT GALLERY -->
+
+<div class="lightbox" id="lightbox">
+
+    <button class="lightbox-close" aria-label="Close project viewer">×</button>
+
+    <div class="lightbox-content">
+        <img src="" alt="Project preview">
+    </div>
+
+    <div class="lightbox-caption"></div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

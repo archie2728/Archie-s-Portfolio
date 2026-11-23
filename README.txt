@@ -1,19 +1,9 @@
-ARCHIE LUMOSAD PORTFOLIO — BLACK / MONOCHROME EDITION
+ARCHIE LUMOSAD PORTFOLIO — SUPABASE CONNECTED VERSION
 
-Preview locally:
-1. Extract this ZIP.
-2. Open index.html in a browser.
+Preview locally: extract ZIP and open index.html.
 
-Publish on GitHub Pages:
-1. Upload/replace the website files in the root of Archie-s-Portfolio.
-2. Keep the assets folder intact.
-3. Commit the changes and wait for GitHub Pages to deploy.
+Supabase setup: follow SUPABASE_SETUP.md and run supabase-projects.sql in the Supabase SQL Editor. Then edit supabase-config.js with your Project URL and Publishable key.
 
-IMPORTANT ABOUT THE ADD PROJECT BUTTON:
-The Add project feature creates a preview card only in the current browser session. GitHub Pages is static hosting, so it cannot permanently upload files to the public website by itself. To publish projects for everyone, add the image to assets and add/update the project entry in index.html, then push to GitHub.
+Existing KOKOL projects remain in the HTML. Additional project rows from Supabase will be loaded into the Projects section automatically. Upload images to the public project-images bucket and add their public URLs to the projects table.
 
-Files:
-- index.html
-- style.css
-- script.js
-- assets/ (your portrait and KOKOL screenshots)
+Never place Supabase Secret keys or service-role keys in frontend files.
