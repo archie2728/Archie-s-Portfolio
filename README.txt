@@ -1,12 +1,19 @@
-ARCHIE LUMOSAD PORTFOLIO
+ARCHIE LUMOSAD PORTFOLIO — BLACK / MONOCHROME EDITION
 
 Preview locally:
-1. Open index.html in a browser.
+1. Extract this ZIP.
+2. Open index.html in a browser.
 
-Deploy to GitHub Pages:
-1. Upload the contents of this folder to your portfolio repository (keep assets/ folder).
-2. Repository Settings > Pages > Deploy from a branch.
-3. Choose main and /(root), then Save.
+Publish on GitHub Pages:
+1. Upload/replace the website files in the root of Archie-s-Portfolio.
+2. Keep the assets folder intact.
+3. Commit the changes and wait for GitHub Pages to deploy.
 
-Replace the KOKOL screenshots in assets/ if you want to use newer captures. The email address is set to archielumosad2@gmail.com.\nEOF
-cd /mnt/data && zip -qr Archie-Portfolio-Website.zip archie_portfolio && ls -lh /mnt/data/Archie-Portfolio-Website.zip
+IMPORTANT ABOUT THE ADD PROJECT BUTTON:
+The Add project feature creates a preview card only in the current browser session. GitHub Pages is static hosting, so it cannot permanently upload files to the public website by itself. To publish projects for everyone, add the image to assets and add/update the project entry in index.html, then push to GitHub.
+
+Files:
+- index.html
+- style.css
+- script.js
+- assets/ (your portrait and KOKOL screenshots)
