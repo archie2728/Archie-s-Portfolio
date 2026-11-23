@@ -1,21 +1,12 @@
 ARCHIE LUMOSAD PORTFOLIO
 
+Preview locally:
+1. Open index.html in a browser.
 
-HOW TO PREVIEW
-1. Extract the ZIP.
-2. Open index.html in a browser.
+Deploy to GitHub Pages:
+1. Upload the contents of this folder to your portfolio repository (keep assets/ folder).
+2. Repository Settings > Pages > Deploy from a branch.
+3. Choose main and /(root), then Save.
 
-
-HOW TO HOST WITH GITHUB PAGES
-1. Create a GitHub repository (example: archie-portfolio).
-2. Upload all files and folders in this ZIP (index.html, style.css, script.js, assets/).
-3. In the repository, go to Settings > Pages.
-4. Under Build and deployment, select Deploy from a branch.
-5. Choose branch: main, folder: /root, then Save.
-6. Wait for GitHub to provide the public portfolio link.
-
-
-EDIT YOUR CONTACT
-Change the email address in index.html if needed.
-
-This portfolio is a static website and does not require a server or database.
+Replace the KOKOL screenshots in assets/ if you want to use newer captures. The email address is set to archielumosad2@gmail.com.\nEOF
+cd /mnt/data && zip -qr Archie-Portfolio-Website.zip archie_portfolio && ls -lh /mnt/data/Archie-Portfolio-Website.zip

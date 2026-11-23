@@ -1,4 +1,3 @@
-// Lightweight portfolio interactions: mobile nav scroll behavior and image focus.
-document.querySelectorAll('.gallery img').forEach(img => {
-  img.addEventListener('click', () => img.classList.toggle('focused'));
-});
+window.addEventListener('load',()=>{document.querySelector('.loader')?.classList.add('hide');});
+const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}})},{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+const menu=document.querySelector('.menu-btn');const nav=document.querySelector('.nav-links');menu?.addEventListener('click',()=>nav.classList.toggle('open'));nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
